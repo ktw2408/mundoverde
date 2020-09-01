@@ -1,0 +1,204 @@
+﻿<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+	<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<TITLE> MUNDO VERDE </TITLE>
+	<link rel="stylesheet" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=interean" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap&subset=interean" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Black00.woff">
+	<link href="https://fonts.googleapis.com/css?family=Girassol&display=swap&subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700,800&display=swap" rel="stylesheet">
+
+
+	<!--바로가기 버튼 기능 제이쿼리-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+	</script>
+	<script>
+
+		$(document).ready(function () {
+			$("button").click(function () {
+				$("div.links").toggle();
+			});
+		});
+
+	</script>
+
+	<script type="text/javascript">
+		/* 사용자가 새로고침, F5 눌럿을 때만, 배경화면이 자동 변경 자바스크립트 함수*/
+
+		window.onload = function () {
+
+
+			var background_img = "../img/background/1.jpeg";
+
+			var number = Math.floor(Math.random() * 4) + 1;
+
+			var container = document.getElementById("container");
+
+
+
+			background_img = "../img/background/" + number + ".jpeg";
+
+			container.style.backgroundImage = "url('" + background_img + "')";
+
+		}
+	</script>
+</HEAD>
+<!---------------------제목부---------------------->
+<body id="container">
+	<div class="board">
+		<div class="pannel">
+			<div class="pannel_img">
+				<div class="pannel_title">
+					<a href="home.html">
+						<h1 class="title">MUNDO<br>VERDE</h1>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!---------------------대기능부---------------------->
+	<nav class="navigation">
+		<div class="menu">
+			<div class="menu__item">
+				<a class="menu__link">
+					<div class="dropdown">
+						<span class="menu__title">
+							<span class="menu__first-word" data-hover="한국">
+								K
+							</span>
+							<!--
+							-->
+							<span class="menu__second-word" data-hover="경기">
+								LEAGUE
+							</span>
+						</span>
+						<div class="dropdown-content">
+							<a href="kor_free.html" class="rollover">자유게시판</a>
+							<a href="kor_news.html" class="rollover">최신뉴스</a>
+							<a href="kor_discuss.html" class="rollover">토론게시판</a>
+							<a href="kor_teaminfo.html" class="rollover">국내팀정보</a>
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="menu__item">
+				<a class="menu__link">
+					<div class="dropdown">
+						<span class="menu__title">
+							<span class="menu__first-word" data-hover="국제">
+								INT.
+							</span>
+							<!--
+							-->
+							<span class="menu__second-word" data-hover="경기">
+								LEAGUE
+							</span>
+						</span>
+						<div class="dropdown-content">
+							<a href="inter_free.html" class="rollover">자유게시판</a>
+							<a href="inter_news.html" class="rollover">최신뉴스</a>
+							<a href="inter_discuss.html" class="rollover">토론게시판</a>
+							<a href="inter_teaminfo.html" class="rollover">해외팀정보</a>
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="menu__item">
+				<a href="agoraMain.html" class="menu__link">
+					<div class="dropdown">
+						<span class="menu__title">
+							<span class="menu__first-word" data-hover="자유">
+								AGORA
+							</span>
+							<!--
+							-->
+							<span class="menu__second-word" data-hover="광장">
+								SQUARE
+							</span>
+						</span>
+						<div class="dropdown-content">
+							<a href="agoraMain.html" class="rollover"></a>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</nav>
+	<br />
+	<br />
+	<!-------------------------------------------------------------------------------------------------------->
+	<!-------------------------------------------------------------------------------------------------------->
+	<div class="article_part">
+		<br>
+		<table border="1" cellpadding="0" cellspacing="0" bgcolor="#fffff0" width="90%">
+			<tr>
+				<td height="50" align="center">게시물이 수정되었습니다.</td>
+			</tr>
+			<tr>
+				<td align="center" height="30">
+					[ <a href="agoraMain.html?key=null&pageno=1">목록으로 이동</a> ]
+					[ <a href="agora_view.html?&key=null&pageno=1&no=5">글내용 보기</a> ]
+				</td>
+			</tr>
+		</table>
+	</div>
+	<!--아티클파트 아랫부분-->
+
+	<div class="link">
+		<div class="links">
+			<img style="width:120px;" src="../img/linkbanner/no_racism.jpeg" title="EPL 인종차별 반대 캠페인">
+			</a>
+		</div>
+		<!--				<p class="link_text">
+							<button class="side">열기/닫기</button>
+						</p>-->
+		<div class="link0">
+			<div class="links1">
+				<a href="http://www.fifa.com/" title="FIFA(국제축구연맹)">
+					<img class="link_emblem" src="../img/linkbanner/link_fifa.png">
+				</a>
+			</div>
+			<div class="links1">
+				<a href="http://the-afc.com/" title="AFC(아시아축구연맹)">
+					<img class="link_emblem" src="../img/linkbanner/link_afc.png">
+				</a>
+			</div>
+			<div class="links1">
+				<a href="https://www.uefa.com/" title="UEFA(유럽축구연맹)">
+					<img class="link_emblem" src="../img/linkbanner/link_uefa.png">
+				</a>
+			</div>
+			<div class="links1">
+				<a href="https://www.kfa.or.kr/" title="대한축구협회">
+					<img class="link_emblem" src="../img/linkbanner/link_kfa.png">
+				</a>
+			</div>
+			<div class="links1">
+				<a href="http://www.kleague.com/" title="한국프로축구연맹">
+					<img class="link_emblem" src="../img/linkbanner/link_kleague.png">
+				</a>
+			</div>
+			<div class="links1">
+				<a href="https://www.premierleague.com/" title="EPL(잉글랜드 프리미어리그)">
+					<img class="link_emblem" src="../img/linkbanner/link_epl.png">
+				</a>
+			</div>
+			<div class="links1">
+				<a href="https://www.laliga.com/en-GB" title="LA LIGA(스페인 라리가)">
+					<img class="link_emblem" src="../img/linkbanner/link_laliga.png">
+				</a>
+			</div>
+			<div class="links1">
+				<a href="https://www.bundesliga.com/en/bundesliga" title="BUNDESLIGA(독일 분데스리가)">
+					<img class="link_emblem" src="../img/linkbanner/link_bundes.png">
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</HTML>

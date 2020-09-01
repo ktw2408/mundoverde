@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>MUNDO VERDE</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap&subset=korean" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Black00.woff">
+    <link href="https://fonts.googleapis.com/css?family=Girassol&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700,800&display=swap" rel="stylesheet">
+    <!--바로가기 버튼 기능 제이쿼리-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script>
+
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("div.links").toggle();
+            });
+        });
+
+    </script>
+
+    <script type="text/javascript">
+        /* 사용자가 새로고침, F5 눌럿을 때만, 배경화면이 자동 변경 자바스크립트 함수*/
+
+        window.onload = function () {
+
+
+            var background_img = "../img/background/1.jpeg";
+
+            var number = Math.floor(Math.random() * 4) + 1;
+
+            var container = document.getElementById("container");
+
+
+
+            background_img = "../img/background/" + number + ".jpeg";
+
+            container.style.backgroundImage = "url('" + background_img + "')";
+
+        }
+    </script>
+</head>
+<!---------------------제목부---------------------->
+<body id="container">
+    <div class="board">
+        <div class="pannel">
+            <div class="pannel_img">
+                <div class="pannel_title">
+                    <a href="../home.html">
+                        <h1 class="title">MUNDO<br>VERDE</h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------대기능부---------------------->
+    <nav class="navigation">
+        <div class="menu">
+            <div class="menu__item">
+                <a class="menu__link">
+                    <div class="dropdown">
+                        <span class="menu__title">
+                            <span class="menu__first-word" data-hover="한국">
+                                K
+                            </span>
+                            <!--
+                            -->
+                            <span class="menu__second-word" data-hover="경기">
+                                LEAGUE
+                            </span>
+                        </span>
+                        <div class="dropdown-content">
+                            <a href="../kor/kor_free.html" class="rollover">자유게시판</a>
+                            <a href="../kor/kor_news.html" class="rollover">최신뉴스</a>
+                            <a href="../kor/kor_discuss.html" class="rollover">토론게시판</a>
+                            <a href="../kor/kor_teaminfo.html" class="rollover">국내팀정보</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="menu__item">
+                <a class="menu__link">
+                    <div class="dropdown">
+                        <span class="menu__title">
+                            <span class="menu__first-word" data-hover="국제">
+                                INT.
+                            </span>
+                            <!--
+                            -->
+                            <span class="menu__second-word" data-hover="경기">
+                                LEAGUE
+                            </span>
+                        </span>
+                        <div class="dropdown-content">
+                            <a href="../inter/inter_free.html" class="rollover">자유게시판</a>
+                            <a href="../inter/inter_news.html" class="rollover">최신뉴스</a>
+                            <a href="../inter/inter_discuss.html" class="rollover">토론게시판</a>
+                            <a href="../inter/inter_teaminfo.html" class="rollover">해외팀정보</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="menu__item">
+                <a href="../agora/agoraMain.html" class="menu__link">
+                    <div class="dropdown">
+                        <span class="menu__title">
+                            <span class="menu__first-word" data-hover="자유">
+                                AGORA
+                            </span>
+                            <!--
+                            -->
+                            <span class="menu__second-word" data-hover="광장">
+                                SQUARE
+                            </span>
+                        </span>
+                        <div class="dropdown-content">
+                            <a href="../agora/agoraMain.html" class="rollover"></a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="article_part">
+
+        <!----------------------------------------------내용부-------------------------------------------------->
+        <section>
+            <!--1위부터 4위까지-->
+
+            <table align="center" class="tb_i">
+                <p class="p_title" style="padding-top: 0px;">K. LEAGUE</p>
+
+                <tr>
+                    <td>
+                        <a href="../teaminfo/kor/01_jeonbuk.html">
+                            <img src="../img/logo/01_jeonbuk.png" class="emblem">
+                            <p class="team_name">전북 현대</p>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="../teaminfo/kor/02_ulsan.html">
+                            <img src="../img/logo/02_ulsan.png" class="emblem">
+                            <p class="team_name">울산 현대</p>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="../teaminfo/kor/03_seoul.html">
+                            <img src="../img/logo/03_seoul.png" class="emblem">
+                            <p class="team_name">FC 서울</p>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="../teaminfo/kor/04_pohang.html">
+                            <img src="../img/logo/04_pohang.png" class="emblem">
+                            <p class="team_name">포항 스틸러스</p>
+                        </a>
+                    </td>
+                </tr>
+
+                <!--5위부터 8위까지-->
+                <tr>
+                    <td>
+                        <a href="../teaminfo/kor/05_daegu.html">
+                            <img src="../img/logo/05_daegu.png" class="emblem">
+                            <p class="team_name">대구FC</p>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="../teaminfo/kor/06_gangwon.html">
+                            <img src="../img/logo/06_gangwon.png" class="emblem">
+                            <p class="team_name">강원FC</p>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="../teaminfo/kor/07_sangju.html">
+                            <img src="../img/logo/07_sangju.jpg" class="emblem">
+                            <p class="team_name">상주 상무</p>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="../teaminfo/kor/08_suwon.html">
+                            <img src="../img/logo/08_suwon.png" class="emblem">
+                            <p class="team_name">수원 삼성</p>
+                        </a>
+                    </td>
+                </tr>
+
+                <!--9위부터 12위까지-->
+                <tr>
+                    <td>
+                        <a href="../teaminfo/kor/09_seongnam.html">
+                            <img src="../img/logo/09_seongnam.png" class="emblem">
+                            <p class="team_name">성남 FC</p>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="../teaminfo/kor/10_incheon.html">
+                            <img src="../img/logo/10_incheon.png" class="emblem">
+                            <p class="team_name">인천 유나이티드</p>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="../teaminfo/kor/11_gwangju.html">
+                            <img src="../img/logo/11_gwangju.png" class="emblem">
+                            <p class="team_name">광주FC</p>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="../teaminfo/kor/12_busan.html">
+                            <img src="../img/logo/12_busan.png" class="emblem">
+                            <p class="team_name">부산 아이파크</p>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </div>
+    <!----------------배너부분------------->
+
+    <div class="link">
+        <div class="links">
+            <a>
+                <img style="width:120px;" src="../img/linkbanner/no_racism.jpeg" title="EPL 인종차별 반대 캠페인">
+            </a>
+        </div>
+        <div class="link0">
+            <div class="links1">
+                <a href="http://www.fifa.com/" title="FIFA(국제축구연맹)">
+                    <img class="link_emblem" src="../img/linkbanner/link_fifa.png">
+                </a>
+            </div>
+            <div class="links1">
+                <a href="http://the-afc.com/" title="AFC(아시아축구연맹)">
+                    <img class="link_emblem" src="../img/linkbanner/link_afc.png">
+                </a>
+            </div>
+            <div class="links1">
+                <a href="https://www.uefa.com/" title="UEFA(유럽축구연맹)">
+                    <img class="link_emblem" src="../img/linkbanner/link_uefa.png">
+                </a>
+            </div>
+            <div class="links1">
+                <a href="https://www.kfa.or.kr/" title="대한축구협회">
+                    <img class="link_emblem" src="../img/linkbanner/link_kfa.png">
+                </a>
+            </div>
+            <div class="links1">
+                <a href="http://www.kleague.com/" title="한국프로축구연맹">
+                    <img class="link_emblem" src="../img/linkbanner/link_kleague.png">
+                </a>
+            </div>
+            <div class="links1">
+                <a href="https://www.premierleague.com/" title="EPL(잉글랜드 프리미어리그)">
+                    <img class="link_emblem" src="../img/linkbanner/link_epl.png">
+                </a>
+            </div>
+            <div class="links1">
+                <a href="https://www.laliga.com/en-GB" title="LA LIGA(스페인 라리가)">
+                    <img class="link_emblem" src="../img/linkbanner/link_laliga.png">
+                </a>
+            </div>
+            <div class="links1">
+                <a href="https://www.bundesliga.com/en/bundesliga" title="BUNDESLIGA(독일 분데스리가)">
+                    <img class="link_emblem" src="../img/linkbanner/link_bundes.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
